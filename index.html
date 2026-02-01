@@ -17,7 +17,8 @@
 </head>
 <body>
   <div class="card">
-    <h1>Will you be my Valentine? 💘</h1>
+    <h2>Ayesha Muhammad Amer</h2>
+<h1>Will you be Ibrahim's Valentine? 💘</h1>
     <div class="stage" id="stage">
       <button id="yes">Yes</button>
       <button id="no">No</button>
@@ -48,16 +49,19 @@
       noCount++;
       no.style.transform = `translateX(0) scale(${Math.max(0.72, 1 - noCount*0.1)})`;
 
-      if (noCount === 1) msg.textContent = "eh? 😳";
-      if (noCount === 2) msg.textContent = "that’s illegal 😭";
-      if (noCount === 3) msg.textContent = "okay okay chill 😤";
+      if (noCount === 1) msg.textContent = "ghalat wala hai 😅";
+      if (noCount === 2) msg.textContent = "dihaan dein yes pe Ayesha";
+      if (noCount === 3) msg.textContent = "yes green waala hai jaan";
+      if (noCount === 4) msg.textContent = "mani pedi karwa ke dounga 👀";
+      if (noCount === 5) msg.textContent = "matcha dila ke dounga 👀";
+      if (noCount === 6) msg.textContent = "bas bohat hogaya choice hi nahin hai";
 
       placeNo();
 
-      if (noCount >= 4) {
-        no.textContent = "Okay fine 😭";
+      if (noCount >= 7) {
+        no.textContent = "hai hi nahin choice 🤷🏻‍♂️";
         no.style.background = "#a855f7";
-        msg.textContent = "I knew you’d fold 😌";
+        msg.textContent = "HAI HI NAHIN CHOICE 🤷🏻‍♂️";
       }
     }
 
@@ -65,9 +69,9 @@
     no.addEventListener("touchstart", onNoTap, { passive: false });
 
     yes.addEventListener("click", () => {
-      msg.innerHTML = "YAYYY 💖<br>Ok now you’re officially my Valentine 😌🌹";
+      msg.innerHTML = "aayi na line pe 😁<br>Ok now you’re officially my Valentine 😎🌹";
       no.style.display = "none";
-      yes.textContent = "Locked in 🔒";
+      yes.textContent = "I love you 😘";
       yes.disabled = true;
       yes.style.opacity = 0.9;
     });
